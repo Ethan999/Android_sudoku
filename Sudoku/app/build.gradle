@@ -1,0 +1,55 @@
+apply plugin: 'com.android.model.application'
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.3"
+
+        ndk {
+            moduleName = "GsudoStr"
+            ldLibs.addAll(['log', 'm', 'z'])
+            stl = "stlport_static"
+        }
+
+        defaultConfig {
+            applicationId = "com.sudoku.song.sudoku"
+            minSdkVersion.apiLevel = 15
+            targetSdkVersion.apiLevel = 23
+            versionCode = 6
+            versionName = "3.1"
+        }
+        buildTypes {
+            release {
+                minifyEnabled = false
+                proguardFiles.add(file("proguard-rules.pro"))
+            }
+        }
+
+/*
+    splits {
+        abi {
+            enable true
+            reset()
+            include  'armeabi-v7a', 'armeabi',"x86"
+            universalApk true
+        }
+    }
+   */
+        //sourceSets { main { jni.srcDirs = [] } }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.purplebrain.adbuddiz.sdk:AdBuddiz-Java:3.+'//Advertisement
+}
+
+
+//advertisement begin
+repositories {
+    maven {
+        url 'http://repository.adbuddiz.com/maven'
+    }
+}
+//end

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MiniSudoku</string>
+    <string name="hello_Sudoku">MiniSudoku</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_game">About</string>
+    <string name="open_help_line">Open Help Line</string>
+    <string name="close_help_line">Close Help Line</string>
+    <string name="ask_levels">Please choose the level:</string>
+    <string name="level_1">Easy</string>
+    <string name="level_2">MEDIUM</string>
+    <string name="level_3">HARD</string>
+
+    <string name="num_1">1</string>
+    <string name="num_2">2</string>
+    <string name="num_3">3</string>
+    <string name="num_4">4</string>
+    <string name="num_5">5</string>
+    <string name="num_6">6</string>
+    <string name="num_7">7</string>
+    <string name="num_8">8</string>
+    <string name="num_9">9</string>
+
+    <string name="skd_string1">761934825354628197928157634219546378483279516576381942195762483832495761647813259</string>
+
+    <string name="Email">hseeyes@gmail.com</string>
+    <string name="myName">Song Huang</string>
+    <string name="aboutMessage">Thanks for using.\nIf you like it, please give some praise,thanks!</string>
+    <string name="title_activity_first">FirstActivity</string>
+
+</resources>
